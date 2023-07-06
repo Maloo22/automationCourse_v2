@@ -29,6 +29,7 @@ public class SignInPage extends BaseMain {
 
     public void validateSignInForm(){
 
+
         System.out.println("Email Field is ...  " + driver.findElement(By.xpath(emailField)).isDisplayed());
         System.out.println("Password Field is ... " + driver.findElement(By.xpath(passwordField)).isDisplayed());
         System.out.println("Log in page is ... " + driver.findElement(By.xpath(logInBtn)).isDisplayed());

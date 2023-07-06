@@ -20,6 +20,7 @@ public class HomePage extends BaseMain{
 
     public void clickSignIn(){
 
+
         // Open website + full screen
         openWebSite();
         driver.findElement(By.xpath(signInBtn)).click();

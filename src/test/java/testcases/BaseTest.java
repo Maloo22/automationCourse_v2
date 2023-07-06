@@ -11,6 +11,7 @@ import pageObjects.SignUpPage;
 public class BaseTest {
 
 
+
     public ChromeDriver driver;
     HomePage homePage;
     SignInPage signInPage;

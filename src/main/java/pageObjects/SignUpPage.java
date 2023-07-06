@@ -12,6 +12,7 @@ import java.util.List;
 
 public class SignUpPage extends BaseMain{
 
+
     public SignUpPage(WebDriver driver) {
         super(driver);
     }
