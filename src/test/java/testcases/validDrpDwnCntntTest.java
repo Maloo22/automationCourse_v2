@@ -28,6 +28,15 @@ public class validDrpDwnCntntTest extends BaseTest{
 
     }
 
+    @Test
+    public void list2 () throws InterruptedException{
+
+        homePage.openWebSite();
+        homePage.clickSignUpButton();
+        signUpPage.compareDropDownContentWithMatch();
+
+    }
+
 
 
 }
