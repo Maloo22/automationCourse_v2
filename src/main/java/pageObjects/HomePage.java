@@ -16,8 +16,6 @@ public class HomePage extends BaseMain{
     public String signUpButton = "//div[@class='menu']/a[3]";
 
 
-
-
     public void clickSignIn(){
 
 
@@ -34,9 +32,22 @@ public class HomePage extends BaseMain{
 
 
     public void openWebSite(){
-        // Open website + full screen
+
         driver.get(WebsiteURL);
-        driver.manage().window().maximize();
+
+    }
+
+    public void homePageScroll(){
+
+        scrollPage(2500);
+        scrollPage(-2500);
+        scrollPage(5500);
+
+    }
+
+    public void switchToTabs (){
+
+        switchToWindow(0);
 
     }
 

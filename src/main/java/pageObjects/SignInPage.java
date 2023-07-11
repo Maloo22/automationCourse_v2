@@ -18,7 +18,7 @@ public class SignInPage extends BaseMain {
     public String emailField = "//input[@id='email']";
     public String passwordField = "//input[@id='password']";
     public String logInBtn = "//button[contains(text(),'Log In')]";
-    public String validMessDisp = "//div[@class='test-login-errors']";
+    public String validMessDisp = "//body/div[@id='app']/div[1]/div[2]/div[2]/p[contains(text(),'Error: email is incorrect')]";     //"//div[@class='test-login-errors']";
     public String checkbox = "//input[@id='auth-page-remember-me']";
 
     //values
@@ -44,7 +44,7 @@ public class SignInPage extends BaseMain {
     }
 
     public void errorMessageAfterInvalidCredential (){
-        System.out.println("Error is appeared ... " + driver.findElement(By.xpath(validMessDisp)).isDisplayed());
+        System.out.println("Validation message is displayed is ... " + driver.findElement(By.xpath(validMessDisp)).isDisplayed());
     }
 
     public void checkBoxIsSelected (){

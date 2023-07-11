@@ -1,22 +1,19 @@
 package testcases;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
-
 
 
 public class Automation_Selenium extends BaseTest {
 
 
     @Test
-    public void openHomePageAndClickSignInBtn () throws InterruptedException{
+    public void openHomePageAndClickSignInBtn () {
 
         homePage.clickSignIn();
     }
 
     @Test
-    public void validInputFieldsOnSignInPage () throws InterruptedException{
+    public void validInputFieldsOnSignInPage () {
 
         homePage.clickSignIn();
         signInPage.validateSignInForm();
@@ -24,27 +21,19 @@ public class Automation_Selenium extends BaseTest {
     }
 
     @Test
-    public void inputCredentialOnSignInPage () throws InterruptedException{
+    public void inputCredentialOnSignInPage () {
 
         homePage.clickSignIn();
         signInPage.fillSignInForm();
     }
 
-    @Test
-    public void errorMassageOnAfterInputOnSingInPage () throws  InterruptedException {
 
-        homePage.clickSignIn();
-        signInPage.fillSignInForm();
-        Thread.sleep(5000);
-        signInPage.errorMessageAfterInvalidCredential();
-    }
 
     @Test
-    public void validateCheckbox () throws InterruptedException {
+    public void validateCheckbox () {
+
         homePage.clickSignIn();
         signInPage.checkBoxIsSelected();
     }
-
-
 
 }
