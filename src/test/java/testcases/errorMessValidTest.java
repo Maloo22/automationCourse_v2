@@ -15,6 +15,7 @@ public class errorMessValidTest extends BaseTest {
     @Test
     public void errorMassageOnAfterInputOnSingInPage () {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.fillSignInForm();
 

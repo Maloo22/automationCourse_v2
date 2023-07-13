@@ -25,12 +25,6 @@ public class BaseMain {
 
             public void switchToWindow(int tab) {
 
-            driver.switchTo().newWindow(WindowType.TAB);
-            driver.switchTo().newWindow(WindowType.TAB);
-            driver.switchTo().newWindow(WindowType.TAB);
-            driver.switchTo().newWindow(WindowType.TAB);
-            driver.switchTo().newWindow(WindowType.TAB);
-
             List<String> tabHandler = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabHandler.get(tab));
 
