@@ -9,12 +9,14 @@ public class Automation_Selenium extends BaseTest {
     @Test
     public void openHomePageAndClickSignInBtn () {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
     }
 
     @Test
     public void validInputFieldsOnSignInPage () {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.validateSignInForm();
 
@@ -23,6 +25,7 @@ public class Automation_Selenium extends BaseTest {
     @Test
     public void inputCredentialOnSignInPage () {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.fillSignInForm();
     }
@@ -30,6 +33,7 @@ public class Automation_Selenium extends BaseTest {
     @Test
     public void validateCheckbox () {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.checkBoxIsSelected();
     }
