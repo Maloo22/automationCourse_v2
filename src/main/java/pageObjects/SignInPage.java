@@ -13,7 +13,6 @@ public class SignInPage extends BaseMain {
     }
 
 
-
     //locators
     public String emailField = "//input[@id='email']";
     public String passwordField = "//input[@id='password']";
@@ -24,7 +23,6 @@ public class SignInPage extends BaseMain {
     //values
     public String emailValue = "efimovich@gmail.com";
     public String passwordValue = "password";
-
 
 
     public void validateSignInForm(){

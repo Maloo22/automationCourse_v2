@@ -27,8 +27,6 @@ public class Automation_Selenium extends BaseTest {
         signInPage.fillSignInForm();
     }
 
-
-
     @Test
     public void validateCheckbox () {
 

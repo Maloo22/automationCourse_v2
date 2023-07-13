@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 public class tabsAndSrcollTest extends BaseTest {
 
-
     @Test
     public void scrollingHomePage () {
 

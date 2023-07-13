@@ -63,9 +63,4 @@ public class SignUpPage extends BaseMain{
 
 
 
-
-
-
-
-
 }
