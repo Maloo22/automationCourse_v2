@@ -20,6 +20,7 @@ public class BaseTest {
     SignUpPage signUpPage;
 
 
+
     @BeforeMethod
     public void startAndFullScreen () {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");

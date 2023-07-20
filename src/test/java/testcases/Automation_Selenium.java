@@ -1,20 +1,22 @@
 package testcases;
 
+
 import org.testng.annotations.Test;
+
 
 
 public class Automation_Selenium extends BaseTest {
 
 
     @Test
-    public void openHomePageAndClickSignInBtn () {
+    public void openHomePageAndClickSignInBtn() {
 
         homePage.openWebSite();
         homePage.clickSignIn();
     }
 
     @Test
-    public void validInputFieldsOnSignInPage () {
+    public void validInputFieldsOnSignInPage() {
 
         homePage.openWebSite();
         homePage.clickSignIn();
@@ -23,7 +25,7 @@ public class Automation_Selenium extends BaseTest {
     }
 
     @Test
-    public void inputCredentialOnSignInPage () {
+    public void inputCredentialOnSignInPage() {
 
         homePage.openWebSite();
         homePage.clickSignIn();
@@ -31,11 +33,13 @@ public class Automation_Selenium extends BaseTest {
     }
 
     @Test
-    public void validateCheckbox () {
+    public void validateCheckbox() {
 
         homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.checkBoxIsSelected();
     }
 
+
 }
+

@@ -1,26 +1,21 @@
 package testcases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.testng.annotations.Test;
 
 
 
 public class validDrpDwnCntntTest extends BaseTest{
 
     @Test
-    public void openSignUpPage () throws InterruptedException{
+    public void openSignUpPage ()  {
 
         homePage.openWebSite();
         homePage.clickSignUpButton();
     }
 
     @Test
-    public void list () throws InterruptedException{
+    public void list ()  {
 
         homePage.openWebSite();
         homePage.clickSignUpButton();
@@ -29,7 +24,7 @@ public class validDrpDwnCntntTest extends BaseTest{
     }
 
     @Test
-    public void list2 () throws InterruptedException{
+    public void list2 ()  {
 
         homePage.openWebSite();
         homePage.clickSignUpButton();
