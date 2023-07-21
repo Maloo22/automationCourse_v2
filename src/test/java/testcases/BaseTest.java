@@ -40,7 +40,8 @@ public class BaseTest {
 
     @AfterMethod
     public void closeBrowser(){
-        driver.close();
+
+        driver.quit();
     }
 }
 
