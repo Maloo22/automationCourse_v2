@@ -10,7 +10,8 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 
-public class errorMessValidTest extends BaseTest {
+public class ErrorMessValidTest extends BaseTest {
+
 
 
 

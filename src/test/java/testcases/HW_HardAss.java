@@ -20,7 +20,7 @@ public class HW_HardAss extends BaseTest {
     int expListSize = 5;
     int actListSize;
 
-    String headerText = "//div[contains(text(),'Choose your area of expertise')]";
+    String headerText = "//div[@class='quiz-section-title']";
 
 
 
@@ -45,15 +45,10 @@ public class HW_HardAss extends BaseTest {
         Assert.assertEquals(actListSize,expListSize,"if list is not the same");
 
 
-        boolean headerIsExist = headerText.contains("Choose your area of expertise");
+        System.out.println(driver.findElement(By.xpath(headerText)).getText());
 
-
-        if (headerIsExist) {
-            System.out.println("expectedHeaderSign");
-        } else {
-            System.out.println("UNexpectedHeaderSign");
-        }
-//        System.out.println(headerIsExist);
+        boolean headerIsExist = driver.findElement(By.xpath(headerText)).getText().contains("Choose your ar4ea of expertise");
+        System.out.println(headerIsExist);
 
         Assert.assertTrue(headerIsExist);
 

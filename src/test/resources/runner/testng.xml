@@ -4,9 +4,9 @@
     <test name="Regression" >
         <classes>
             <class name="testcases.Automation_Selenium" />
-            <class name="testcases.errorMessValidTest" />
-            <class name="testcases.tabsAndSrcollTest" />
-            <class name="testcases.validDrpDwnCntntTest" />
+            <class name="testcases.ErrorMessValidTest" />
+            <class name="testcases.TabsAndScrollTest" />
+            <class name="testcases.ValidDrpDwnCntntTest" />
         </classes>
     </test>
 

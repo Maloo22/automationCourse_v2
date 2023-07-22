@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 
 
-public class validDrpDwnCntntTest extends BaseTest{
+public class ValidDrpDwnCntntTest extends BaseTest{
 
     @Test
     public void openSignUpPage ()  {
@@ -14,6 +14,7 @@ public class validDrpDwnCntntTest extends BaseTest{
         homePage.openWebSite();
         homePage.clickSignUpButton();
     }
+
 
     @Test
     public void list ()  {

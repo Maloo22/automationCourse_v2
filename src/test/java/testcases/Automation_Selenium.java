@@ -16,6 +16,7 @@ public class Automation_Selenium extends BaseTest {
         homePage.clickSignIn();
     }
 
+
     @Test
     public void validInputFieldsOnSignInPage() {
 
