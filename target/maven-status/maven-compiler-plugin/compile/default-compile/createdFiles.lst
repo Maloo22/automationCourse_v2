@@ -1,0 +1,4 @@
+pageObjects\BaseMain.class
+pageObjects\SignUpPage.class
+pageObjects\SignInPage.class
+pageObjects\HomePage.class
