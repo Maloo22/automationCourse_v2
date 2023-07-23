@@ -18,22 +18,21 @@ public class BaseMain {
         this.driver = driver;
 
     }
-            public void scrollPage(int pixels) {
+    public void scrollPage(int pixels) {
 
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("window.scrollBy(0, " + pixels + ")", "");
-        }
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, " + pixels + ")", "");
+    }
 
-            public void switchToWindow(int tab) {
+    public void switchToWindow(int tab) {
 
 
 
-            List<String> tabHandler = new ArrayList<>(driver.getWindowHandles());
-            driver.switchTo().window(tabHandler.get(tab));
+        List<String> tabHandler = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabHandler.get(tab));
 
-        }
+    }
 
 }
-
 
 

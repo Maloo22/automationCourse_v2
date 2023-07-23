@@ -2,9 +2,9 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-public class tabsAndSrcollTest extends BaseTest {
+public class TabsAndScrollTest extends BaseTest {
 
-    @Test
+    @Test (groups = {"testIncludeTWO1 "})
     public void scrollingHomePage () {
 
         homePage.openWebSite();
@@ -13,12 +13,10 @@ public class tabsAndSrcollTest extends BaseTest {
 
 
 
-
-    @Test
+    @Test ( groups = {"testIncludeTWO2 "} )
     public void tabsAndSelection ()  {
 
         homePage.openWebSite();
         homePage.switchToTabs();
     }
 }
-

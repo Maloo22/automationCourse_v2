@@ -20,7 +20,7 @@
           <include name="tabsAndSelection"/>
         </methods>
       </class> <!-- testcases.tabsAndSrcollTest -->
-      <class name="testcases.errorMessValidTest">
+      <class name="testcases.ErrorMessValidTest">
         <methods>
           <include name="closeBrowser"/>
           <include name="startAndFullScreen"/>

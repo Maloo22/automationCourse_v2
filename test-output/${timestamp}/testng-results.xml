@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -116,10 +117,96 @@
           </reporter-output>
         </test-method> <!-- validateCheckbox -->
         <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@3ba9ad43]" started-at="2023-07-22T14:40:23 EEST" name="closeBrowser" finished-at="2023-07-22T14:40:23 EEST" duration-ms="160" status="PASS">
+=======
+<testng-results ignored="5" total="14" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-23T13:34:16 EEST" name="Suite1" finished-at="2023-07-23T13:35:08 EEST" duration-ms="51553">
+    <groups>
+      <group name="testExclude">
+        <method signature="Automation_Selenium.validInputFieldsOnSignInPage()[pri:2, instance:testcases.Automation_Selenium@498d318c]" name="validInputFieldsOnSignInPage" class="testcases.Automation_Selenium"/>
+      </group> <!-- testExclude -->
+      <group name="testIncludeTWO">
+        <method signature="TabsAndScrollTest.scrollingHomePage()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" name="scrollingHomePage" class="testcases.TabsAndScrollTest"/>
+        <method signature="TabsAndScrollTest.tabsAndSelection()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" name="tabsAndSelection" class="testcases.TabsAndScrollTest"/>
+      </group> <!-- testIncludeTWO -->
+      <group name="testInclude">
+        <method signature="ErrorMessValidTest.errorMassageOnAfterInputOnSingInPage()[pri:0, instance:testcases.ErrorMessValidTest@1ddf84b8]" name="errorMassageOnAfterInputOnSingInPage" class="testcases.ErrorMessValidTest"/>
+        <method signature="Automation_Selenium.inputCredentialOnSignInPage()[pri:1, instance:testcases.Automation_Selenium@3c130745]" name="inputCredentialOnSignInPage" class="testcases.Automation_Selenium"/>
+        <method signature="Automation_Selenium.validateCheckbox()[pri:3, instance:testcases.Automation_Selenium@3c130745]" name="validateCheckbox" class="testcases.Automation_Selenium"/>
+        <method signature="Automation_Selenium.inputCredentialOnSignInPage()[pri:1, instance:testcases.Automation_Selenium@498d318c]" name="inputCredentialOnSignInPage" class="testcases.Automation_Selenium"/>
+        <method signature="Automation_Selenium.validateCheckbox()[pri:3, instance:testcases.Automation_Selenium@498d318c]" name="validateCheckbox" class="testcases.Automation_Selenium"/>
+      </group> <!-- testInclude -->
+    </groups>
+    <test started-at="2023-07-23T13:34:16 EEST" name="Regression" finished-at="2023-07-23T13:34:46 EEST" duration-ms="30009">
+      <class name="testcases.ErrorMessValidTest">
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.ErrorMessValidTest@1ddf84b8]" started-at="2023-07-23T13:34:27 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:28 EEST" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="errorMassageOnAfterInputOnSingInPage()[pri:0, instance:testcases.ErrorMessValidTest@1ddf84b8]" started-at="2023-07-23T13:34:28 EEST" name="errorMassageOnAfterInputOnSingInPage" finished-at="2023-07-23T13:34:37 EEST" duration-ms="8310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMassageOnAfterInputOnSingInPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.ErrorMessValidTest@1ddf84b8]" started-at="2023-07-23T13:34:37 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:38 EEST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.ErrorMessValidTest -->
+      <class name="testcases.TabsAndScrollTest">
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:38 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:38 EEST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="scrollingHomePage()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:38 EEST" name="scrollingHomePage" finished-at="2023-07-23T13:34:41 EEST" duration-ms="2905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollingHomePage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:41 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:42 EEST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:42 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:42 EEST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="tabsAndSelection()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:42 EEST" name="tabsAndSelection" finished-at="2023-07-23T13:34:46 EEST" duration-ms="3630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tabsAndSelection -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TabsAndScrollTest@1139b2f3]" started-at="2023-07-23T13:34:46 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:46 EEST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TabsAndScrollTest -->
+      <class name="testcases.Automation_Selenium">
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:16 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:18 EEST" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="inputCredentialOnSignInPage()[pri:1, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:18 EEST" name="inputCredentialOnSignInPage" finished-at="2023-07-23T13:34:22 EEST" duration-ms="3936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputCredentialOnSignInPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:22 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:23 EEST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:23 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:24 EEST" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="validateCheckbox()[pri:3, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:24 EEST" name="validateCheckbox" finished-at="2023-07-23T13:34:27 EEST" duration-ms="3438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@3c130745]" started-at="2023-07-23T13:34:27 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:27 EEST" duration-ms="249" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.Automation_Selenium -->
+<<<<<<< Updated upstream
       <class name="testcases.errorMessValidTest">
         <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.errorMessValidTest@1139b2f3]" started-at="2023-07-22T14:39:58 EEST" name="startAndFullScreen" finished-at="2023-07-22T14:40:01 EEST" duration-ms="2822" status="PASS">
           <reporter-output>
@@ -182,6 +269,56 @@
           </reporter-output>
         </test-method> <!-- validateCheckbox -->
         <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@56620197]" started-at="2023-07-22T14:40:40 EEST" name="closeBrowser" finished-at="2023-07-22T14:40:40 EEST" duration-ms="139" status="PASS">
+=======
+    </test> <!-- Regression -->
+    <test started-at="2023-07-23T13:34:46 EEST" name="Smoke" finished-at="2023-07-23T13:35:08 EEST" duration-ms="21511">
+      <class name="testcases.Automation_Selenium">
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:46 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:47 EEST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="inputCredentialOnSignInPage()[pri:1, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:47 EEST" name="inputCredentialOnSignInPage" finished-at="2023-07-23T13:34:51 EEST" duration-ms="4035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputCredentialOnSignInPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:51 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:51 EEST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:51 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:52 EEST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="openHomePageAndClickSignInBtn()[pri:2, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:52 EEST" name="openHomePageAndClickSignInBtn" finished-at="2023-07-23T13:34:56 EEST" duration-ms="3425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePageAndClickSignInBtn -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:56 EEST" name="closeBrowser" finished-at="2023-07-23T13:34:56 EEST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:56 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:34:57 EEST" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="validInputFieldsOnSignInPage()[pri:2, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:34:57 EEST" name="validInputFieldsOnSignInPage" finished-at="2023-07-23T13:35:00 EEST" duration-ms="3431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validInputFieldsOnSignInPage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:35:00 EEST" name="closeBrowser" finished-at="2023-07-23T13:35:00 EEST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="startAndFullScreen()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:35:00 EEST" name="startAndFullScreen" finished-at="2023-07-23T13:35:01 EEST" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAndFullScreen -->
+        <test-method signature="validateCheckbox()[pri:3, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:35:01 EEST" name="validateCheckbox" finished-at="2023-07-23T13:35:08 EEST" duration-ms="6470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckbox -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Automation_Selenium@498d318c]" started-at="2023-07-23T13:35:08 EEST" name="closeBrowser" finished-at="2023-07-23T13:35:08 EEST" duration-ms="176" status="PASS">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

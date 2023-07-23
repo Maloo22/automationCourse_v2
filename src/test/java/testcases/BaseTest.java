@@ -15,7 +15,6 @@ import java.time.Duration;
 public class BaseTest {
 
 
-
     public ChromeDriver driver;
     HomePage homePage;
     SignInPage signInPage;
@@ -23,7 +22,7 @@ public class BaseTest {
 
 
 
-    @BeforeMethod
+    @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void startAndFullScreen () {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
@@ -37,14 +36,14 @@ public class BaseTest {
         signUpPage = new SignUpPage(driver);
 
 
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
     }
 
-    @AfterMethod
+
+    @AfterMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void closeBrowser(){
 
         driver.quit();
     }
 }
-
 

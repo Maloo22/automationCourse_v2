@@ -9,15 +9,15 @@ public class Automation_Selenium extends BaseTest {
 
 
 
-
-    @Test
+    @Test(priority = 2)
     public void openHomePageAndClickSignInBtn() {
 
         homePage.openWebSite();
         homePage.clickSignIn();
     }
 
-    @Test
+
+    @Test(priority = 2,groups = {"testExclude"})
     public void validInputFieldsOnSignInPage() {
 
         homePage.openWebSite();
@@ -26,7 +26,7 @@ public class Automation_Selenium extends BaseTest {
 
     }
 
-    @Test
+    @Test(priority = 1,groups = {"testInclude"})
     public void inputCredentialOnSignInPage() {
 
         homePage.openWebSite();
@@ -34,7 +34,7 @@ public class Automation_Selenium extends BaseTest {
         signInPage.fillSignInForm();
     }
 
-    @Test
+    @Test(priority = 3, groups = {"testInclude"})
     public void validateCheckbox() {
 
         homePage.openWebSite();
@@ -44,4 +44,3 @@ public class Automation_Selenium extends BaseTest {
 
 
 }
-

@@ -12,12 +12,6 @@ public class HW_SoftAss extends BaseTest{
 
 
 
-
-
-
-
-
-
     String expPageTitle = "Quizzes list";
     String actPageTitle;
 
@@ -25,12 +19,12 @@ public class HW_SoftAss extends BaseTest{
     int expListSize = 7;
     int actListSize;
 
-    String headerText = "//div[contains(text(),'Choose your area of exp7ertise')]";
+    String headerText = "//div[@class='quiz-section-title']";
 
 
 
     @Test
-    public void softAssertionsHW () {
+    public void softAssertionsHW1 () {
 
         driver.get("https://test.my-fork.com/quizzes-list");
         actPageTitle = driver.getTitle();
@@ -49,32 +43,18 @@ public class HW_SoftAss extends BaseTest{
         softAssert.assertEquals(actListSize, expListSize, "if list is not the same");
 
 
-        boolean headerIsExist = headerText.contains("Choose your area of expertise");
+        System.out.println(driver.findElement(By.xpath(headerText)).getText());
 
-
-        if (headerIsExist) {
-            System.out.println("expectedHeaderSign");
-        } else {
-            System.out.println("UNexpectedHeaderSign");
-        }
+        boolean headerIsExist = driver.findElement(By.xpath(headerText)).getText().contains("Choose your area of expertise");
         System.out.println(headerIsExist);
 
-//       softAssert.assertTrue(headerIsExist);
+
 
 
 
         softAssert.assertAll();
 
     }
-
-
-
-
-
-
-
-
-
 
 
 
