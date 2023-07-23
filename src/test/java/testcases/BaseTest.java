@@ -22,6 +22,7 @@ public class BaseTest {
 
 
 
+
     @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void startAndFullScreen () {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");
