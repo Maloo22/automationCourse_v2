@@ -12,9 +12,13 @@ public class tabsAndSrcollTest extends BaseTest {
     }
 
 
+<<<<<<< Updated upstream:src/test/java/testcases/tabsAndSrcollTest.java
 
 
     @Test
+=======
+    @Test ( groups = {"testIncludeTWO2 "} )
+>>>>>>> Stashed changes:src/test/java/testcases/TabsAndScrollTest.java
     public void tabsAndSelection ()  {
 
         homePage.openWebSite();

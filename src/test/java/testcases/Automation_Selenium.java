@@ -17,7 +17,11 @@ public class Automation_Selenium extends BaseTest {
         homePage.clickSignIn();
     }
 
+<<<<<<< Updated upstream
     @Test
+=======
+    @Test(priority = 2,groups = {"testExclude"})
+>>>>>>> Stashed changes
     public void validInputFieldsOnSignInPage() {
 
         homePage.openWebSite();

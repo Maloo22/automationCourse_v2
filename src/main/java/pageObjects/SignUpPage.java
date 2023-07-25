@@ -20,7 +20,12 @@ public class SignUpPage extends BaseMain{
 
     }
 
+<<<<<<< Updated upstream
 //55
+=======
+
+
+>>>>>>> Stashed changes
     public void getDropDownContent () {
         WebElement DropDownElement;
         DropDownElement = driver.findElement(By.id("job-title"));

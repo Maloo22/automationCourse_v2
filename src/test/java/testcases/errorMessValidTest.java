@@ -13,8 +13,6 @@ import java.time.Duration;
 public class errorMessValidTest extends BaseTest {
 
 
-
-
     public String validMessDisp = "//body/div[@id='app']/div[1]/div[2]/div[2]/p[contains(text(),'Error: email is incorrect')]";
 
     @Test

@@ -25,9 +25,12 @@ public class HW_HardAss extends BaseTest {
 
 
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
     @Test
     public void hardAssertionsHW ()  {
 
