@@ -27,6 +27,7 @@ public class HW_SoftAss extends BaseTest{
 
     String headerText = "//div[contains(text(),'Choose your area of exp7ertise')]";
 
+
     @Test
     public void softAssertionsHW () {
 

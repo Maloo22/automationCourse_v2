@@ -22,12 +22,10 @@ public class BaseTest {
     SignUpPage signUpPage;
 
 
-<<<<<<< Updated upstream
 
-    @BeforeMethod
-=======
+
     @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
->>>>>>> Stashed changes
+
     public void startAndFullScreen () {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
