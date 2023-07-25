@@ -41,7 +41,7 @@ public class BaseTest {
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
     }
 
-    @AfterMethod
+    @AfterMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void closeBrowser(){
 
         driver.quit();

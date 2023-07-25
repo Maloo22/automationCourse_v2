@@ -11,7 +11,6 @@ public class TabsAndScrollTest extends BaseTest {
         homePage.homePageScroll();
     }
 
-
     @Test ( groups = {"testIncludeTWO2 "} )
 
     public void tabsAndSelection ()  {

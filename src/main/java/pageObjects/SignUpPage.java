@@ -19,7 +19,6 @@ public class SignUpPage extends BaseMain{
 
     }
 
-
     public void getDropDownContent () {
         WebElement DropDownElement;
         DropDownElement = driver.findElement(By.id("job-title"));

@@ -15,7 +15,7 @@ public class ValidDrpDwnCntntTest extends BaseTest{
 
         homePage.openWebSite();
         homePage.clickSignUpButton();
-        System.out.println("va;id 1");
+
     }
 
 

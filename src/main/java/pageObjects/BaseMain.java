@@ -10,7 +10,6 @@ import java.util.List;
 public class BaseMain {
 
 
-    
     public WebDriver driver;
 
     public BaseMain (WebDriver driver){
