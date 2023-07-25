@@ -9,6 +9,10 @@ import org.testng.annotations.Test;
 public class Automation_Selenium extends BaseTest {
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     @Test
     public void openHomePageAndClickSignInBtn () throws InterruptedException{
 

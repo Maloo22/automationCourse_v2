@@ -19,8 +19,14 @@ public class BaseTest {
 
 
 
+<<<<<<< Updated upstream
     @BeforeMethod
     public void startAndFullScreen () throws InterruptedException{
+=======
+    @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
+
+    public void startAndFullScreen () {
+>>>>>>> Stashed changes
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
