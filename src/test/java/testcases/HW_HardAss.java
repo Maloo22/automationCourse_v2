@@ -13,7 +13,6 @@ public class HW_HardAss extends BaseTest {
 
 
 
-
     String expPageTitle = "Quizzes list";
     String actPageTitle;
 

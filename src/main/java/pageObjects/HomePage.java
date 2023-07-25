@@ -29,7 +29,6 @@ public class HomePage extends BaseMain{
         driver.findElement(By.xpath(signUpButton)).click();
     }
 
-
     public void openWebSite(){
 
         driver.get(WebsiteURL);

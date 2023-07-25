@@ -1,11 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<<<<<<< Updated upstream
-<suite name="Suite1" parallel="classes" thread-count="4" verbose="1" >
-=======
+
 <suite name="Suite1"  thread-count="14" verbose="10" >
->>>>>>> Stashed changes
+
     <test name="Regression" >
+
+        <groups>
+            <run>
+                <include name="testInclude"></include>
+                <include name="testIncludeTWO"></include>
+                <include name="testExclude"></include>
+            </run>
+        </groups>
+
         <classes>
 
             <class name="testcases.ValidDrpDwnCntntTest">
@@ -15,15 +22,10 @@
             </class>
 
             <class name="testcases.Automation_Selenium" />
-<<<<<<< Updated upstream
-            <class name="testcases.ErrorMessValidTest" />
-            <class name="testcases.TabsAndScrollTest" />
-            <class name="testcases.ValidDrpDwnCntntTest" />
-=======
+
             <class name="testcases.ErrorMessValidTest" />
             <class name="testcases.TabsAndScrollTest" />
 
->>>>>>> Stashed changes
         </classes>
     </test>
 

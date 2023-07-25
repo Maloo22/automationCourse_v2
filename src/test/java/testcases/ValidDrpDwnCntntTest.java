@@ -27,7 +27,6 @@ public class ValidDrpDwnCntntTest extends BaseTest{
         homePage.clickSignUpButton();
         signUpPage.getDropDownContent();
 
-
     }
 
     @Test(groups = {"testIncludeTWO"})

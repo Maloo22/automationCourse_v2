@@ -23,7 +23,6 @@ public class BaseTest {
 
 
 
-
     @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
 
     public void startAndFullScreen () {
