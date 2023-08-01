@@ -13,12 +13,12 @@ import java.util.List;
 
 public class SignUpPage extends BaseMain{
 
-
     public SignUpPage(WebDriver driver) {
         super(driver);
+
+
     }
 
-//55
     public void getDropDownContent () {
         WebElement DropDownElement;
         DropDownElement = driver.findElement(By.id("job-title"));
@@ -33,7 +33,7 @@ public class SignUpPage extends BaseMain{
 
 
 
-public void compareDropDownContentWithMatch() {
+    public void compareDropDownContentWithMatch() {
     WebElement dropDownElement = driver.findElement(By.id("job-title"));
     Select searchDropDown = new Select(dropDownElement);
     List<WebElement> options = searchDropDown.getOptions();
@@ -60,11 +60,6 @@ public void compareDropDownContentWithMatch() {
         System.out.println("NOT !!! similar lists");
     }
 }
-
-
-
-
-
 
 
 

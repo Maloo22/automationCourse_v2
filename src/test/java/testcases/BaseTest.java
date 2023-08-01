@@ -8,6 +8,10 @@ import pageObjects.HomePage;
 import pageObjects.SignInPage;
 import pageObjects.SignUpPage;
 
+import java.time.Duration;
+
+
+
 public class BaseTest {
 
 
@@ -19,23 +23,29 @@ public class BaseTest {
 
 
 
-    @BeforeMethod
-    public void startAndFullScreen () throws InterruptedException{
+    @BeforeMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
+
+    public void startAndFullScreen () {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Andrew\\IdeaProjects\\automationCourse\\src\\test\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
 
+
         homePage = new HomePage(driver);
         signInPage = new SignInPage(driver);
         signUpPage = new SignUpPage(driver);
 
+
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
     }
 
-    @AfterMethod
-    public void closeBrowser() throws InterruptedException {
-        Thread.sleep(2000);
-        driver.close();
+    @AfterMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
+    public void closeBrowser(){
+
+        driver.quit();
     }
 }
+
+

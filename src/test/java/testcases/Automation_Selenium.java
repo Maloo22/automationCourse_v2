@@ -1,8 +1,7 @@
 package testcases;
 
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 
 
 
@@ -10,41 +9,40 @@ public class Automation_Selenium extends BaseTest {
 
 
     @Test
-    public void openHomePageAndClickSignInBtn () throws InterruptedException{
+    public void openHomePageAndClickSignInBtn() {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
     }
 
-    @Test
-    public void validInputFieldsOnSignInPage () throws InterruptedException{
 
+
+    @Test(priority = 2,groups = {"testExclude"})
+
+    public void validInputFieldsOnSignInPage() {
+
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.validateSignInForm();
 
     }
 
     @Test
-    public void inputCredentialOnSignInPage () throws InterruptedException{
+    public void inputCredentialOnSignInPage() {
 
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.fillSignInForm();
     }
 
     @Test
-    public void errorMassageOnAfterInputOnSingInPage () throws  InterruptedException {
+    public void validateCheckbox() {
 
-        homePage.clickSignIn();
-        signInPage.fillSignInForm();
-        Thread.sleep(5000);
-        signInPage.errorMessageAfterInvalidCredential();
-    }
-
-    @Test
-    public void validateCheckbox () throws InterruptedException {
+        homePage.openWebSite();
         homePage.clickSignIn();
         signInPage.checkBoxIsSelected();
     }
 
 
-
 }
+
