@@ -36,9 +36,9 @@ public class SignInPage extends BaseMain {
     }
 
 
-    public void fillSignInForm (){
-        driver.findElement(By.xpath(emailField)).sendKeys(emailValue);
-        driver.findElement(By.xpath(passwordField)).sendKeys(passwordValue);
+    public void fillSignInForm (String email, String password){
+        driver.findElement(By.xpath(emailField)).sendKeys(email);
+        driver.findElement(By.xpath(passwordField)).sendKeys(password);
         driver.findElement(By.xpath(logInBtn)).sendKeys(Keys.ENTER);
     }
 

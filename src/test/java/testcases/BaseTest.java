@@ -38,13 +38,13 @@ public class BaseTest {
         signUpPage = new SignUpPage(driver);
 
 
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void closeBrowser(){
 
-        driver.quit();
+            driver.quit();
     }
 }
 

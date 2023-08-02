@@ -18,5 +18,6 @@ public class TabsAndScrollTest extends BaseTest {
         homePage.openWebSite();
         homePage.switchToTabs();
     }
+
 }
 

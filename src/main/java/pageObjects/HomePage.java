@@ -15,6 +15,7 @@ public class HomePage extends BaseMain{
     public String WebsiteURL = "https://test.my-fork.com/";
     public String signInBtn = "//a[@class='menu-item log-in-button']";
     public String signUpButton = "//div[@class='menu']/a[3]";
+    public String courseGalleryBTN = "//a[@href='/quizzes-list']";
 
 
     public void clickSignIn(){
@@ -26,6 +27,11 @@ public class HomePage extends BaseMain{
     public void clickSignUpButton () {
 
         driver.findElement(By.xpath(signUpButton)).click();
+    }
+
+    public void openCourseGalleryPageByClickButton () {
+
+        driver.findElement(By.xpath(courseGalleryBTN)).click();
     }
 
     public void openWebSite(){
@@ -47,6 +53,8 @@ public class HomePage extends BaseMain{
         switchToWindow(0);
 
     }
+
+
 
 }
 

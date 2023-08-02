@@ -21,7 +21,7 @@ public class ErrorMessValidTest extends BaseTest {
 
         homePage.openWebSite();
         homePage.clickSignIn();
-        signInPage.fillSignInForm();
+        signInPage.fillSignInForm(signInPage.emailValue, signInPage.passwordValue);
 
         WebDriverWait waitForMessage = new WebDriverWait(driver,Duration.ofSeconds(100));
         waitForMessage.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(validMessDisp)));

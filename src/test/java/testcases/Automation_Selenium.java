@@ -32,7 +32,7 @@ public class Automation_Selenium extends BaseTest {
 
         homePage.openWebSite();
         homePage.clickSignIn();
-        signInPage.fillSignInForm();
+        signInPage.fillSignInForm(signInPage.emailValue, signInPage.passwordValue);
     }
 
     @Test

@@ -54,7 +54,7 @@ public class HW_SoftAss extends BaseTest{
         }
         System.out.println(headerIsExist);
 
-//       softAssert.assertTrue(headerIsExist);
+       softAssert.assertTrue(headerIsExist);
 
         softAssert.assertAll();
 
