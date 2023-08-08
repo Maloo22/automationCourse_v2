@@ -1,7 +1,6 @@
 package testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,7 +17,7 @@ import java.util.List;
 
 
 
-public class HW_17_EndToEndTest extends BaseTest {
+public class HW_17_EndToEndTest_Part_1_Ex_1_and_2_TEST extends BaseTest {
 
 
     //locators
@@ -120,58 +119,4 @@ public class HW_17_EndToEndTest extends BaseTest {
 
 
 
-//    Scenario 3. Quiz progress bar functionality.
-//
-//    1. Open main page
-//    2. Open Course Gallery page
-//    3. Note the total number of questions in the “SQL 101 (Basic)” quiz
-//    4. Click the “Start” button on “SQL 101 (Basic)”
-//    5. Select an answer for the first question
-//    6. Validate that the progress bar now has the correct value (correct value = number of answered questions / total number of questions)
-//    7. Click the “Next” button
-//    8. Validate progress bar has changed value
-//    9. Validate new changed value is correct
-
-
-    String startBTN = "//body[1]/div[1]/div[2]/div[3]/div[2]/div[2]/a[1]";
-    String counter = "//body/div[@id='app']/div[2]/div[3]/div[2]/div[2]/div[1]";
-    String nextBTN = "//div[contains(text(),'Next')]";
-
-    @Test
-    public void ScenarioTHREE() throws InterruptedException {
-
-        homePage.openWebSite();
-        homePage.openCourseGalleryPageByClickButton();
-
-
-        // Ищем каунтер
-        WebElement element = driver.findElement(By.xpath(counter));
-
-        // Получаем текст из каунтера
-        String elementText = element.getText();
-
-
-        // Разделяем строку по символу "/"
-        String[] values = elementText.split("/");
-
-        // Обрезаем пробелы в значениях и делаем из стринги инты
-        int firstValue = Integer.parseInt(values[0].trim());
-        int secondValue = Integer.parseInt(values[1].trim());
-
-        System.out.println("Первое значение: " + firstValue);
-        System.out.println("Второе значение: " + secondValue);
-
-        //////////////-- начало теста --////////////////////
-
-
-        driver.findElement(By.xpath(startBTN)).sendKeys(Keys.ENTER);
-        driver.findElement(By.xpath("//div[contains(text(),'A')]")).click(); //div[contains(text(),'A')] - рабочий для первого ответа
-        Thread.sleep(1000);
-        driver.findElement(By.xpath(nextBTN)).click();   // -- место фейла
-
-
-
-
-
-    }
 }

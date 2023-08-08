@@ -19,5 +19,6 @@ public class TabsAndScrollTest extends BaseTest {
         homePage.switchToTabs();
     }
 
+
 }
 

@@ -24,6 +24,7 @@ public class HomePage extends BaseMain{
 
     }
 
+
     public void clickSignUpButton () {
 
         driver.findElement(By.xpath(signUpButton)).click();

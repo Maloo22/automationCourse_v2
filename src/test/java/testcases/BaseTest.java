@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.HomePage;
+import pageObjects.QuizzersListAndTestPage;
 import pageObjects.SignInPage;
 import pageObjects.SignUpPage;
 
@@ -20,6 +21,7 @@ public class BaseTest {
     HomePage homePage;
     SignInPage signInPage;
     SignUpPage signUpPage;
+    QuizzersListAndTestPage quizzersListAndTestPage;
 
 
 
@@ -36,6 +38,8 @@ public class BaseTest {
         homePage = new HomePage(driver);
         signInPage = new SignInPage(driver);
         signUpPage = new SignUpPage(driver);
+        quizzersListAndTestPage = new QuizzersListAndTestPage(driver);
+
 
 
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -44,7 +48,7 @@ public class BaseTest {
     @AfterMethod (groups = {"testInclude", "testIncludeTWO", "testExclude"}, alwaysRun = true)
     public void closeBrowser(){
 
-            driver.quit();
+    //        driver.quit();
     }
 }
 
