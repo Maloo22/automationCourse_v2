@@ -18,6 +18,7 @@ public class Automation_Selenium extends BaseTest {
 
 
 
+
     @Test(priority = 2,groups = {"testExclude"})
 
     public void validInputFieldsOnSignInPage() {
@@ -35,6 +36,8 @@ public class Automation_Selenium extends BaseTest {
         homePage.clickSignIn();
         signInPage.fillSignInForm(signInPage.emailValue, signInPage.passwordValue);
     }
+
+
 
     @Test
     public void validateCheckbox() {

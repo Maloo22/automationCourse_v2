@@ -1,16 +1,18 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+
+import java.util.logging.Logger;
 
 public class SignInPage extends BaseMain {
 
 
-    public SignInPage (WebDriver driver) {
+    public SignInPage (WebDriver driver, Logger log) {
 
-        super(driver);
+        super(driver, log);
     }
+
 
 
 
@@ -38,9 +40,17 @@ public class SignInPage extends BaseMain {
 
 
     public void fillSignInForm (String email, String password){
-        driver.findElement(By.xpath(emailField)).sendKeys(email);
-        driver.findElement(By.xpath(passwordField)).sendKeys(password);
-        driver.findElement(By.xpath(logInBtn)).sendKeys(Keys.ENTER);
+        typeUsingXpath(emailField,"EmailTextField",email);
+        log.info("email text field was filled successfully");
+//        driver.findElement(By.xpath(emailField)).sendKeys(email);
+        typeUsingXpath(passwordField,"PasswordTextField",password);
+        log.info("password text field was filled successfully");
+
+//        driver.findElement(By.xpath(passwordField)).sendKeys(password);
+        clickUsingXpath(logInBtn,"Log In BTN");
+        log.info("log in btn was successfully clicked");
+
+//        driver.findElement(By.xpath(logInBtn)).sendKeys(Keys.ENTER);
     }
 
     public void errorMessageAfterInvalidCredential (){

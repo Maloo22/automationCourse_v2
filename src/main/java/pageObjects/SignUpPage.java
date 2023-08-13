@@ -9,15 +9,16 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
+
 
 
 public class SignUpPage extends BaseMain{
 
 
-    public SignUpPage(WebDriver driver) {
-        super(driver);
+    public SignUpPage(WebDriver driver, Logger log) {
 
-
+        super(driver, log);
     }
 
     public void getDropDownContent () {

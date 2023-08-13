@@ -1,0 +1,16 @@
+серп. 13, 2023 10:09:46 ПП testcases.BaseTest saveLogs
+INFO: This is beginning of the test
+серп. 13, 2023 10:10:03 ПП pageObjects.BaseMain clickUsingXpath
+INFO: Element: Course Gallery btn was clicked successfully
+серп. 13, 2023 10:10:14 ПП pageObjects.BaseMain clickUsingXpath
+INFO: Element: Sign In BTN was clicked successfully
+серп. 13, 2023 10:10:14 ПП pageObjects.SignInPage fillSignInForm
+INFO: email text field was filled successfully
+серп. 13, 2023 10:10:14 ПП pageObjects.SignInPage fillSignInForm
+INFO: password text field was filled successfully
+серп. 13, 2023 10:10:15 ПП pageObjects.BaseMain clickUsingXpath
+INFO: Element: Log In BTN was clicked successfully
+серп. 13, 2023 10:10:15 ПП pageObjects.SignInPage fillSignInForm
+INFO: log in btn was successfully clicked
+серп. 13, 2023 10:10:16 ПП pageObjects.BaseMain clickUsingXpath
+INFO: Element: Course Gallery btn was clicked successfully

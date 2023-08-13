@@ -1,17 +1,17 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class QuizzersListAndTestPage extends BaseMain{
 
-    public QuizzersListAndTestPage (WebDriver driver) {
+    public QuizzersListAndTestPage (WebDriver driver, Logger log) {
 
-        super(driver);
+        super(driver, log);
     }
 
 
@@ -31,7 +31,9 @@ public class QuizzersListAndTestPage extends BaseMain{
     }
 
     public void pressStartBtn () {
-        driver.findElement(By.xpath(startBTN)).sendKeys(Keys.ENTER);
+
+        pressingEnterUsingXpath(startBTN,"Start BTN");
+        //driver.findElement(By.xpath(startBTN)).sendKeys(Keys.ENTER);
     }
 
 
@@ -58,13 +60,17 @@ public class QuizzersListAndTestPage extends BaseMain{
     public void passingTestAndProgressBarValidation () {
 
             // ПОлучаем все варианты ответов
+
+//            getListUsingXpath(answList,"List");
+
             List<WebElement> answerOptions = driver.findElements(By.xpath(answList));
             int totalQuestions = answerOptions.size();
 
             // цикл прохождения по вопросам
             for (int questionIndex = 0; questionIndex < totalQuestions; questionIndex++) {
                 // Выбрать ответ
-                driver.findElement(By.xpath(answerA)).click();
+                clickUsingXpath(answerA,"Первый вариант ответа");
+//                driver.findElement(By.xpath(answerA)).click();
 
                 WebElement progressBar = driver.findElement(By.xpath(progBar));
                 String progressBarText = progressBar.getText();
@@ -79,11 +85,18 @@ public class QuizzersListAndTestPage extends BaseMain{
                 } else {
                     System.out.println("Не совпало! Должно быть: " + expectedPercentage + "%, Фактическое: " + progressPercentage + "%");
                 }
-                driver.findElement(By.xpath(nextBTN)).click();
+                clickUsingXpath(nextBTN,"Next BTN ");
+
+
 
             }
 
-        }
+    }
+
+
+
+
+
 }
 
 

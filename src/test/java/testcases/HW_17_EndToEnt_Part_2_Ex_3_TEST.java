@@ -7,6 +7,7 @@ public class HW_17_EndToEnt_Part_2_Ex_3_TEST extends BaseTest{
 
 
 
+
     @Test
     public void ScenarioThree () {
         //  1 + 2. Open main page + Open Course Gallery page
