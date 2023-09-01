@@ -77,6 +77,7 @@ public class HW_17_EndToEndTest_Part_1_Ex_1_and_2_TEST extends BaseTest {
 
 
 
+
 //    Scenario 2. Course gallery options.
 //
 //    Open main page

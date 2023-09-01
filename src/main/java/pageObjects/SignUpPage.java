@@ -36,6 +36,7 @@ public class SignUpPage extends BaseMain{
 
 
 
+
     public void compareDropDownContentWithMatch() {
     WebElement dropDownElement = driver.findElement(By.id("job-title"));
     Select searchDropDown = new Select(dropDownElement);

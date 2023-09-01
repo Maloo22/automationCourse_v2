@@ -4,10 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pageObjects.HomePage;
-import pageObjects.QuizzersListAndTestPage;
-import pageObjects.SignInPage;
-import pageObjects.SignUpPage;
+import pageObjects.*;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -26,6 +23,8 @@ public class BaseTest {
     SignInPage signInPage;
     SignUpPage signUpPage;
     QuizzersListAndTestPage quizzersListAndTestPage;
+
+    HW_HTTP_Req_and_Resp_Page hw_http_req_and_resp_page;
 
 
 
@@ -46,7 +45,7 @@ public class BaseTest {
         signInPage = new SignInPage(driver,log);
         signUpPage = new SignUpPage(driver,log);
         quizzersListAndTestPage = new QuizzersListAndTestPage(driver,log);
-
+        hw_http_req_and_resp_page = new HW_HTTP_Req_and_Resp_Page(driver, log);
 
 
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -57,6 +56,7 @@ public class BaseTest {
 
         driver.quit();
     }
+
 
 
     public void saveLogs(Logger log) throws IOException {

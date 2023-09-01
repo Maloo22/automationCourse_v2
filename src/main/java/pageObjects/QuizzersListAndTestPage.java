@@ -37,6 +37,7 @@ public class QuizzersListAndTestPage extends BaseMain{
     }
 
 
+
     public void takingTotalNum () {
         // Ищем каунтер
         WebElement element = driver.findElement(By.xpath(counter));

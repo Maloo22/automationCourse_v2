@@ -16,6 +16,7 @@ public class SignInPage extends BaseMain {
 
 
 
+
     //locators
     public String emailField = "//input[@id='email']";
     public String passwordField = "//input[@id='password']";
